@@ -6,7 +6,7 @@ from sc2.constants import NEXUS, PROBE, PYLON, ASSIMILATOR, GATEWAY, \
 import random
 
 
-class SentdeBot(sc2.BotAI):
+class SakethBot(sc2.BotAI):
     def __init__(self):
         self.ITERATIONS_PER_MINUTE = 165
         self.MAX_WORKERS = 50
@@ -106,6 +106,6 @@ class SentdeBot(sc2.BotAI):
 
 
 run_game(maps.get("AbyssalReefLE"), [
-    Bot(Race.Protoss, SentdeBot()),
+    Bot(Race.Protoss, SakethBot()),
     Computer(Race.Terran, Difficulty.Hard)
     ], realtime=False)
